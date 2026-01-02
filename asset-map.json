@@ -1,59 +1,60 @@
-{
-  "version": "v1.0.0",
-  "cdnBase": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0",
-  "generatedAt": "2024-01-01T00:00:00.000Z",
-  "logo": {
-    "th2-logo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.svg",
-    "th2-logo-mark": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mark.svg",
-    "th2-logo-white": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-white.svg",
-    "th2-logo-mono": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mono.svg",
-    "favicon": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/favicon.svg"
-  },
-  "icons": {
-    "cutting": {
-      "scissors": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/scissors.svg",
-      "fabric": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/fabric.svg",
-      "pattern": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/pattern.svg"
-    },
-    "production": {
-      "sewing-machine": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/production/sewing-machine.svg",
-      "quality-check": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/production/quality-check.svg",
-      "production-line": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/production/production-line.svg"
-    },
-    "hr": {
-      "users": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/hr/users.svg",
-      "employee-card": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/hr/employee-card.svg",
-      "attendance": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/hr/attendance.svg"
-    },
-    "warehouse": {
-      "box": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/warehouse/box.svg",
-      "inventory": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/warehouse/inventory.svg",
-      "delivery": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/warehouse/delivery.svg"
-    },
-    "finance": {
-      "calculator": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/finance/calculator.svg",
-      "invoice": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/finance/invoice.svg",
-      "chart": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/finance/chart.svg"
-    },
-    "system": {
-      "settings": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/system/settings.svg",
-      "dashboard": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/system/dashboard.svg",
-      "user-profile": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/system/user-profile.svg"
-    }
-  },
-  "images": {
-    "banner": {
-      "welcome-banner": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/banner/welcome-banner.svg",
-      "maintenance-banner": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/banner/maintenance-banner.svg"
-    },
-    "empty-state": {
-      "no-data": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/empty-state/no-data.svg",
-      "empty-list": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/empty-state/empty-list.svg"
-    },
-    "panel": {
-      "info-panel": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/panel/info-panel.svg",
-      "warning-panel": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/panel/warning-panel.svg"
-    }
-  }
+﻿{
+    "version":  "v1.0.0",
+    "cdnBase":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0",
+    "generatedAt":  "2026-01-02T15:50:56.285Z",
+    "icons":  {
+                  "hr":  {
+                             "attendance":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/hr/attendance.svg",
+                             "users":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/hr/users.svg",
+                             "employee-card":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/hr/employee-card.svg"
+                         },
+                  "production":  {
+                                     "sewing-machine":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/production/sewing-machine.svg",
+                                     "production-line":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/production/production-line.svg",
+                                     "quality-check":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/production/quality-check.svg"
+                                 },
+                  "cutting":  {
+                                  "fabric":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/fabric.svg",
+                                  "pattern":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/pattern.svg",
+                                  "scissors":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/scissors.svg"
+                              },
+                  "warehouse":  {
+                                    "inventory":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/warehouse/inventory.svg",
+                                    "delivery":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/warehouse/delivery.svg",
+                                    "box":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/warehouse/box.svg"
+                                },
+                  "system":  {
+                                 "dashboard":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/system/dashboard.svg",
+                                 "user-profile":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/system/user-profile.svg",
+                                 "settings":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/system/settings.svg"
+                             },
+                  "finance":  {
+                                  "chart":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/finance/chart.svg",
+                                  "invoice":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/finance/invoice.svg",
+                                  "calculator":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/finance/calculator.svg"
+                              }
+              },
+    "images":  {
+                   "banner":  {
+                                  "maintenance-banner":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/banner/maintenance-banner.svg",
+                                  "welcome-banner":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/banner/welcome-banner.svg"
+                              },
+                   "panel":  {
+                                 "warning-panel":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/panel/warning-panel.svg",
+                                 "info-panel":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/panel/info-panel.svg"
+                             },
+                   "empty-state":  {
+                                       "no-data":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/empty-state/no-data.svg",
+                                       "empty-list":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/images/empty-state/empty-list.svg"
+                                   }
+               },
+    "logo":  {
+                 "th2-logo-mark":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mark.svg",
+                 "th2-logo-white":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-white.svg",
+                 "logo-tron":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/logo-tron.png",
+                 "th2-logo-mono":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mono.svg",
+                 "th2-logo":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.png",
+                 "favicon":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/favicon.svg",
+                 "th2-logo-text":  "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-text.png"
+             }
 }
-

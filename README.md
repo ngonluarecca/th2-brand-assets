@@ -144,7 +144,11 @@ th2-brand-assets/
 ```bash
 # 1. Thêm file mới vào thư mục tương ứng
 # 2. Chạy script generate asset-map.json
-node generate-asset-map.js
+# PowerShell (Windows):
+.\generate-asset-map.ps1 v1.1.0
+
+# Hoặc Node.js:
+node generate-asset-map.js v1.1.0
 
 # 3. Commit và push
 git add .
@@ -161,7 +165,11 @@ git push origin v1.1.0
 ```bash
 # 1. Thay đổi logo
 # 2. Update asset-map.json
-node generate-asset-map.js
+# PowerShell (Windows):
+.\generate-asset-map.ps1 v2.0.0
+
+# Hoặc Node.js:
+node generate-asset-map.js v2.0.0
 
 # 3. Commit
 git add .
@@ -179,7 +187,11 @@ git push origin v2.0.0
 ```bash
 # 1. Sửa file
 # 2. Update asset-map.json nếu cần
-node generate-asset-map.js
+# PowerShell (Windows):
+.\generate-asset-map.ps1 v1.0.1
+
+# Hoặc Node.js:
+node generate-asset-map.js v1.0.1
 
 # 3. Commit
 git add .
@@ -194,14 +206,24 @@ git push origin v1.0.1
 
 ### Generate asset-map.json
 
+#### Cách 1: Dùng PowerShell (Windows - Khuyến nghị)
+
+```powershell
+.\generate-asset-map.ps1 v1.0.0
+```
+
+#### Cách 2: Dùng Node.js (nếu đã cài Node.js)
+
 ```bash
-node generate-asset-map.js
+node generate-asset-map.js v1.0.0
 ```
 
 Script này sẽ:
 - Quét tất cả file trong `logo/`, `icons/`, `images/`
 - Tạo mapping KEY → CDN URL
 - Ghi vào `asset-map.json`
+
+**Lưu ý**: Script tự động detect file `.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`
 
 ## 📦 Dependencies
 
@@ -221,6 +243,56 @@ Không có dependencies. Chỉ cần Node.js để chạy script generate asset-
 - [NAMING-CONVENTIONS.md](./NAMING-CONVENTIONS.md) - Quy chuẩn đặt tên file
 - [VERSIONING.md](./VERSIONING.md) - Quy trình versioning chi tiết
 - [STRUCTURE.md](./STRUCTURE.md) - Cấu trúc thư mục đầy đủ
+- [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) - Hướng dẫn xử lý lỗi
+
+## ⚠️ Troubleshooting
+
+### Lỗi "Failed to fetch version info"
+
+Nếu gặp lỗi này khi truy cập CDN URL:
+
+1. **Kiểm tra repository có public không**
+   - jsDelivr chỉ hỗ trợ public repositories
+   - Đảm bảo repo `ngonluarecca/th2-brand-assets` là public trên GitHub
+
+2. **Đợi jsDelivr index repository**
+   - Sau khi push tag mới, jsDelivr cần 1-5 phút để index
+   - Thử refresh lại sau vài phút
+
+3. **Dùng `@main` thay vì `@v1.0.0` (tạm thời)**
+   ```javascript
+   // Thay vì
+   https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.svg
+   
+   // Dùng tạm
+   https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@main/logo/th2-logo.svg
+   ```
+   ⚠️ **Lưu ý**: Không dùng `@main` trong production, chỉ dùng để test. Luôn pin version cụ thể.
+
+4. **Kiểm tra tag đã được push chưa**
+   ```bash
+   git ls-remote --tags origin
+   ```
+   Nếu tag chưa có, push tag:
+   ```bash
+   git push origin v1.0.0
+   ```
+
+5. **Kiểm tra file có tồn tại không**
+   - Truy cập trực tiếp: `https://github.com/ngonluarecca/th2-brand-assets/blob/v1.0.0/logo/th2-logo.svg`
+   - Nếu file không có, cần commit và push lại
+
+### Test CDN URL
+
+Sau khi push tag, test URL này trong browser:
+```
+https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mark.svg
+```
+
+Nếu vẫn lỗi sau 5-10 phút, kiểm tra:
+- Repository visibility (phải là Public)
+- Tag name (phải chính xác: `v1.0.0`)
+- File path (phải đúng case-sensitive)
 
 ## 📞 Liên hệ
 
