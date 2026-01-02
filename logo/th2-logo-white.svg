@@ -1,0 +1,21 @@
+<!-- THÁI HÀ GARMENT - White Logo (cho dark mode/glass door) -->
+<!-- Logo trắng, dùng cho nền tối hoặc trong suốt -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Chữ TH - màu trắng -->
+  <text x="50" y="70" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">TH</text>
+  
+  <!-- Sợi chỉ trắng với kim may -->
+  <path d="M 20 50 Q 30 40 50 45 Q 70 50 90 40 Q 110 30 130 35 Q 150 40 170 30" 
+        stroke="white" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.95"/>
+  
+  <!-- Kim may (eye và tip) -->
+  <circle cx="180" cy="28" r="3" fill="white" opacity="0.95"/>
+  <path d="M 180 25 L 190 20" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.95"/>
+  
+  <!-- Text "THÁI HÀ GARMENT" -->
+  <text x="200" y="75" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="white" text-anchor="middle">THÁI HÀ GARMENT</text>
+</svg>
