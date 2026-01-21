@@ -1,191 +1,78 @@
-# Cấu trúc thư mục th2-brand-assets
+# Cấu trúc Dự án (Project Structure)
 
-## Sơ đồ cấu trúc hoàn chỉnh
+Tài liệu này mô tả chi tiết cách tổ chức thư mục va tập tin trong repository `th2-brand-assets`. Việc tuân thủ cấu trúc này giúp đảm bảo tính nhất quán và dễ dàng bảo trì khi mở rộng hệ thống Assets.
+
+## 1. Cây thư mục (Directory Tree)
 
 ```
 th2-brand-assets/
-│
-├── 📁 logo/                          # Logo hệ thống
-│   ├── th2-logo.svg                  # Logo chính
-│   ├── th2-logo-white.svg            # Logo trắng (dark mode)
-│   ├── th2-logo-mono.svg             # Logo mono
-│   └── favicon.svg                   # Favicon
-│
-├── 📁 icons/                         # Icon theo module nghiệp vụ
-│   ├── 📁 cutting/                   # Module Cutting
-│   │   ├── scissors.svg
-│   │   ├── fabric.svg
-│   │   └── pattern.svg
-│   │
-│   ├── 📁 production/                # Module Production
-│   │   ├── sewing-machine.svg
-│   │   ├── quality-check.svg
-│   │   └── production-line.svg
-│   │
-│   ├── 📁 hr/                        # Module HR
-│   │   ├── users.svg
-│   │   ├── employee-card.svg
-│   │   └── attendance.svg
-│   │
-│   ├── 📁 warehouse/                 # Module Warehouse
-│   │   ├── box.svg
-│   │   ├── inventory.svg
-│   │   └── delivery.svg
-│   │
-│   ├── 📁 finance/                   # Module Finance
-│   │   ├── calculator.svg
-│   │   ├── invoice.svg
-│   │   └── chart.svg
-│   │
-│   └── 📁 system/                    # Module System
-│       ├── settings.svg
-│       ├── dashboard.svg
-│       └── user-profile.svg
-│
-├── 📁 images/                        # Hình ảnh tĩnh
-│   ├── 📁 banner/                    # Banner
-│   │   ├── welcome-banner.svg
-│   │   └── maintenance-banner.svg
-│   │
-│   ├── 📁 empty-state/               # Empty state
-│   │   ├── no-data.svg
-│   │   └── empty-list.svg
-│   │
-│   └── 📁 panel/                     # Panel
-│       ├── info-panel.svg
-│       └── warning-panel.svg
-│
-├── 📄 asset-map.json                 # Mapping KEY → CDN URL
-├── 📄 generate-asset-map.js          # Script generate asset-map.json
-├── 📄 README.md                      # Tài liệu chính
-├── 📄 NAMING-CONVENTIONS.md          # Quy chuẩn đặt tên
-├── 📄 VERSIONING.md                  # Quy trình versioning
-├── 📄 STRUCTURE.md                   # File này
-├── 📄 package.json                   # Package config
-└── 📄 .gitignore                     # Git ignore rules
+├── assets-map.json         # File định nghĩa đường dẫn CDN và mapping assets
+├── preview_all.html        # File xem trước toàn bộ Assets (được tạo tự động)
+├── README.md               # Hướng dẫn tổng quan dự án
+├── STRUCTURE.md            # (File này) Quy tắc tổ chức cấu trúc dự án
+├── 00_overview.md          # Quy chuẩn thiết kế (Design System & AI Prompts)
+├── icons/                  # Chứa toàn bộ ICON (dạng hình vuông, kích thước nhỏ)
+│   ├── admin/              # Icon quản trị (Lịch, Báo cáo...)
+│   ├── cutting/            # Icon bộ phận Cắt (Vải, Rập, Kéo...)
+│   ├── finance/            # Icon Tài chính - Kế toán
+│   ├── hr/                 # Icon Nhân sự
+│   ├── logistic/           # Icon Vận chuyển
+│   ├── production/         # Icon Sản xuất (Máy may, Chuyền...)
+│   ├── purchase/           # Icon Mua hàng
+│   ├── sales/              # Icon Kinh doanh
+│   ├── system/             # Icon Hệ thống (Cài đặt, Database...)
+│   └── warehouse/          # Icon Kho
+├── images/                 # Chứa hình ảnh minh họa (Banner, Panel...)
+│   ├── banner/             # Ảnh bìa, ảnh tiêu đề
+│   ├── panel/              # Ảnh thông báo, cảnh báo (Alerts)
+│   └── empty-state/        # Ảnh trạng thái rỗng (No data)
+├── logo/                   # Chứa Logo thương hiệu
+└── tools/                  # Các công cụ hỗ trợ (Scripts)
+    ├── generate_preview.py # Script tạo file preview_all.html
+    └── remove_bg.py        # Script xóa nền trắng cho ảnh
 ```
 
-## Mô tả từng thư mục
+## 2. Quy tắc Tổ chức & Đặt tên
 
-### `/logo`
-Chứa tất cả logo của hệ thống TH2:
-- **th2-logo.svg**: Logo chính, dùng cho light mode
-- **th2-logo-white.svg**: Logo trắng, dùng cho dark mode
-- **th2-logo-mono.svg**: Logo mono (single color), dùng khi cần đổi màu
-- **favicon.svg**: Favicon cho browser
+### 2.1. Icons (`/icons`)
+- **Định dạng**: `.png` (bắt buộc).
+- **Kích thước chuẩn**: 150x150px (hoặc tỉ lệ 1:1).
+- **Quy tắc đặt tên file**: `kebab-case` (chữ thường, gạch nối).
+    - Ví dụ đúng: `sewing-machine.png`, `quality-check.png`.
+    - Ví dụ sai: `SewingMachine.png`, `may_may.png`.
+- **Tên tiếng Anh**: Ưu tiên sử dụng tên tiếng Anh chuẩn để dễ map với code.
 
-### `/icons`
-Chứa icon theo từng module nghiệp vụ. Mỗi module có thư mục riêng:
-- **cutting/**: Icon cho module cắt vải
-- **production/**: Icon cho module sản xuất
-- **hr/**: Icon cho module nhân sự
-- **warehouse/**: Icon cho module kho
-- **finance/**: Icon cho module kế toán
-- **system/**: Icon cho hệ thống chung
+### 2.2. Images (`/images`)
+- **Định dạng**: `.png`.
+- **Phân loại**:
+    - `banner/`: Hình chữ nhật ngang.
+    - `panel/`: Icon/Hình minh họa cho các khối thông báo.
+    - `empty-state/`: Hình minh họa cho trạng thái không có dữ liệu.
 
-### `/images`
-Chứa hình ảnh tĩnh dùng chung:
-- **banner/**: Banner cho các trang
-- **empty-state/**: Hình ảnh khi không có dữ liệu
-- **panel/**: Hình ảnh cho các panel thông báo
+### 2.3. Logo (`/logo`)
+- Chứa các biến thể logo chính thức.
+- **Lưu ý**: Chỉ sử dụng các file gốc đã được duyệt. Không tự ý chỉnh sửa logo.
 
-## Quy tắc tổ chức
+## 3. Quy trình Thêm/Sửa/Xóa (Workflow)
 
-1. **Mỗi module có thư mục riêng** trong `/icons`
-2. **File đặt tên kebab-case, không dấu**
-3. **Không có file trùng tên** trong cùng thư mục
-4. **SVG là format chính**, PNG chỉ dùng khi cần thiết
+### 3.1. Thêm Asset mới
+1.  Tạo asset theo quy chuẩn thiết kế trong `00_overview.md`.
+2.  Chạy script xóa nền (nếu asset được tạo từ AI nền trắng):
+    ```bash
+    py tools/remove_bg.py <đường_dẫn_thư_mục_chứa_ảnh_gốc>
+    ```
+3.  Đặt tên file theo quy chuẩn `kebab-case`.
+4.  Copy vào thư mục con tương ứng trong `icons/` hoặc `images/`.
+5.  Chạy script cập nhật preview:
+    ```bash
+    py tools/generate_preview.py
+    ```
+6.  Cập nhật file `asset-map.json` nếu cần dùng CDN.
 
-## Thêm asset mới
+### 3.2. Sửa/Thay thế Asset
+- Ghi đè file cũ bằng file mới cùng tên.
+- **Lưu ý**: Giữ nguyên tên file để không làm hỏng các liên kết trong App đang sử dụng.
 
-### Thêm icon mới
-```bash
-# Ví dụ: Thêm icon mới cho module cutting
-# 1. Tạo file SVG
-touch icons/cutting/new-icon.svg
-
-# 2. Generate asset-map.json
-node generate-asset-map.js v1.1.0
-
-# 3. Commit và tag
-git add .
-git commit -m "feat: add new-icon for cutting module"
-git tag v1.1.0
-```
-
-### Thêm module mới
-```bash
-# Ví dụ: Thêm module mới "quality"
-# 1. Tạo thư mục
-mkdir icons/quality
-
-# 2. Thêm icon vào thư mục
-touch icons/quality/check.svg
-
-# 3. Generate và commit
-node generate-asset-map.js v1.1.0
-git add .
-git commit -m "feat: add quality module icons"
-git tag v1.1.0
-```
-
-## CDN URL Structure
-
-Sau khi generate `asset-map.json`, cấu trúc CDN URL sẽ là:
-
-```
-https://cdn.jsdelivr.net/gh/[username]/th2-brand-assets@[version]/[path]
-```
-
-Ví dụ:
-- Logo: `https://cdn.jsdelivr.net/gh/user/th2-brand-assets@v1.0.0/logo/th2-logo.svg`
-- Icon: `https://cdn.jsdelivr.net/gh/user/th2-brand-assets@v1.0.0/icons/cutting/scissors.svg`
-- Banner: `https://cdn.jsdelivr.net/gh/user/th2-brand-assets@v1.0.0/images/banner/welcome-banner.svg`
-
-## Asset Map Structure
-
-File `asset-map.json` có cấu trúc:
-
-```json
-{
-  "version": "v1.0.0",
-  "cdnBase": "https://cdn.jsdelivr.net/gh/...",
-  "generatedAt": "2024-01-01T00:00:00.000Z",
-  "logo": {
-    "th2-logo": "https://cdn.jsdelivr.net/gh/.../logo/th2-logo.svg",
-    ...
-  },
-  "icons": {
-    "cutting": {
-      "scissors": "https://cdn.jsdelivr.net/gh/.../icons/cutting/scissors.svg",
-      ...
-    },
-    ...
-  },
-  "images": {
-    "banner": {
-      "welcome-banner": "https://cdn.jsdelivr.net/gh/.../images/banner/welcome-banner.svg",
-      ...
-    },
-    ...
-  }
-}
-```
-
-## Maintenance
-
-### Kiểm tra cấu trúc
-```bash
-# List tất cả file SVG
-find . -name "*.svg" -type f
-
-# Kiểm tra file trùng tên
-find . -name "*.svg" -type f | xargs basename | sort | uniq -d
-```
-
-### Cleanup
-```bash
-# Xóa file placeholder (nếu cần)
-# Chỉ xóa sau khi đã thay thế bằng file thật
-```
-
+### 3.3. Xóa Asset
+- Chỉ xóa khi chắc chắn Asset không còn được sử dụng ở bất kỳ đâu.
+- Xóa mục tương ứng trong `asset-map.json`.

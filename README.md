@@ -1,304 +1,78 @@
 # TH2 Brand Assets
 
-Repository tập trung quản lý tất cả logo, icon, và hình ảnh tĩnh cho hệ thống TH2.
+Chào mừng bạn đến với kho lưu trữ tài nguyên thương hiệu (Brand Assets) của hệ thống TH2. Repository này chứa toàn bộ icon, hình ảnh minh họa, và logo được chuẩn hóa để sử dụng thống nhất trên các ứng dụng (AppSheet, Web App, Reports).
 
-## 📋 Mục đích
+## 1. Mục đích & Ý nghĩa
+Dự án này nhằm giải quyết các vấn đề:
+- **Đồng bộ nhận diện**: Đảm bảo tất cả icon/hình ảnh tuân theo một phong cách thiết kế nhất quán ("Soft Lineal Color").
+- **Quản lý tập trung**: Dễ dàng tìm kiếm và tái sử dụng tài nguyên.
+- **Tối ưu hóa**: Assets được lưu trữ dưới dạng PNG trong suốt, tối ưu dung lượng và hiển thị.
+- **CDN Ready**: Cung cấp file `asset-map.json` để tích hợp nhanh vào các ứng dụng thông qua CDN.
 
-Repo này cung cấp:
-- **Logo** cho toàn hệ thống (main, mark, white, mono, favicon)
-- **Icon** thống nhất theo module nghiệp vụ
-- **Hình ảnh** tĩnh (banner, empty state, panel)
-- **CDN URLs** qua jsDelivr để sử dụng trong web forms, AppSheet, và dashboard
+## 2. Hướng dẫn Sử dụng
 
-## 🚀 Cách sử dụng
+### 2.1. Cấu trúc đường dẫn CDN
+Để sử dụng asset trong ứng dụng, bạn có thể dùng đường dẫn trực tiếp từ GitHub qua jsDelivr:
 
-### Lấy link jsDelivr
-
-#### Cách 1: Dùng asset-map.json (Khuyến nghị)
-
-```javascript
-// Fetch asset map từ CDN
-const assetMap = await fetch('https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/asset-map.json')
-  .then(res => res.json());
-
-// Sử dụng
-const logoUrl = assetMap.logo.main;
-const cuttingIcon = assetMap.icons.cutting.scissors;
-```
-
-#### Cách 2: Link trực tiếp
-
-Format: `https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@[version]/[path]`
+- **Base URL**: `https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@<TAG>/`
+    - `<TAG>`: Phiên bản release (ví dụ: `v2.0.1`, `main`...). Khuyên dùng version tag cụ thể để tránh lỗi cache hoặc thay đổi bất ngờ.
 
 Ví dụ:
-- Logo chính: `https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.svg`
-- Logo mark: `https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mark.svg`
-- Icon cutting: `https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/icons/cutting/scissors.svg`
-
-#### Cách 3: Dùng trong HTML/React
-
-```html
-<!-- HTML -->
-<img src="https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.svg" alt="TH2 Logo" />
+```
+https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.1/icons/production/sewing-machine.png
 ```
 
-```jsx
-// React
-<img src={`https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.svg`} alt="TH2 Logo" />
+### 2.2. Asset Map (`asset-map.json`)
+File `asset-map.json` cung cấp một từ điển key-value mapping toàn bộ assets. Các ứng dụng nên fetch file này về để lấy đường dẫn assets thay vì hard-code link.
+
+```json
+{
+  "icons": {
+    "production": {
+      "sewing-machine": "https://cdn.../sewing-machine.png"
+    }
+  }
+}
 ```
 
-### Versioning
+## 3. Quy chuẩn Thiết kế
+Chi tiết về phong cách thiết kế, bảng màu, và mẫu câu lệnh AI (Prompt) để tạo asset mới được mô tả trong tài liệu:
+👉 **[00_overview.md](./00_overview.md)**
 
-Repo sử dụng Git tags để versioning:
-- `v1.0.0` - Version đầu tiên
-- `v1.1.0` - Thêm icon mới, không breaking change
-- `v2.0.0` - Thay đổi logo lớn, breaking change
+## 4. Quy trình Cập nhật & Bảo trì
 
-**Luôn pin version cụ thể trong production!**
-
-## 📁 Cấu trúc thư mục
-
-```
-th2-brand-assets/
-├── logo/
-│   ├── th2-logo.svg          # Logo chính (có text "THÁI HÀ GARMENT")
-│   ├── th2-logo-mark.svg     # Logo mark (chỉ TH với thread/needle, không text)
-│   ├── th2-logo-white.svg    # Logo trắng (dark mode/glass door)
-│   ├── th2-logo-mono.svg     # Logo mono (embossed style)
-│   └── favicon.svg           # Favicon (circular/square app icon)
-├── icons/
-│   ├── cutting/              # Module Cutting
-│   │   ├── scissors.svg
-│   │   ├── fabric.svg
-│   │   └── pattern.svg
-│   ├── production/           # Module Production
-│   │   ├── sewing-machine.svg
-│   │   ├── quality-check.svg
-│   │   └── production-line.svg
-│   ├── hr/                   # Module HR
-│   │   ├── users.svg
-│   │   ├── employee-card.svg
-│   │   └── attendance.svg
-│   ├── warehouse/            # Module Warehouse
-│   │   ├── box.svg
-│   │   ├── inventory.svg
-│   │   └── delivery.svg
-│   ├── finance/              # Module Finance
-│   │   ├── calculator.svg
-│   │   ├── invoice.svg
-│   │   └── chart.svg
-│   └── system/               # Module System
-│       ├── settings.svg
-│       ├── dashboard.svg
-│       └── user-profile.svg
-├── images/
-│   ├── banner/
-│   │   ├── welcome-banner.svg
-│   │   └── maintenance-banner.svg
-│   ├── empty-state/
-│   │   ├── no-data.svg
-│   │   └── empty-list.svg
-│   └── panel/
-│       ├── info-panel.svg
-│       └── warning-panel.svg
-├── asset-map.json            # Mapping KEY → CDN URL
-├── generate-asset-map.js     # Script generate asset-map.json
-└── README.md
-```
-
-## 📝 Quy tắc đặt tên file
-
-1. **Không dấu**: `thiet-ke.svg` ✅ | `thiết-kế.svg` ❌
-2. **Kebab-case**: `production-line.svg` ✅ | `productionLine.svg` ❌
-3. **Mô tả rõ ràng**: `scissors.svg` ✅ | `icon1.svg` ❌
-4. **Tiếng Anh**: Ưu tiên tiếng Anh, nếu không có thì dùng tiếng Việt không dấu
-
-## 🎨 Quy chuẩn Icon
-
-- **Format**: SVG outline
-- **Icon set**: Tabler Icons (hoặc tương đương)
-- **Kích thước**: 24x24px viewBox (có thể scale)
-- **Style**: Outline, stroke-width: 2px
-- **Color**: CurrentColor (để có thể đổi màu qua CSS)
-
-## ⚠️ Những điều KHÔNG được làm
-
-### ❌ KHÔNG được:
-1. **Hotlink từ web bên ngoài** - Tất cả asset phải trong repo này
-2. **Gắn asset trực tiếp vào repo web form** - Chỉ dùng CDN link
-3. **Thay đổi file đã release** - Tạo file mới và bump version
-4. **Dùng version `latest` hoặc `main` trong production** - Luôn pin version cụ thể
-5. **Commit file binary lớn** - Chỉ SVG, PNG nhỏ (< 100KB)
-6. **Đổi tên file đã có** - Tạo file mới, giữ file cũ để backward compatibility
-
-### ✅ ĐƯỢC làm:
-1. Thêm file mới
-2. Tạo version mới khi cần
-3. Cập nhật asset-map.json
-4. Sửa README khi cần
-
-## 🔄 Quy trình cập nhật asset
-
-### Thêm asset mới (không breaking change)
+### Cập nhật File Preview
+Mỗi khi thêm hoặc xóa asset, bạn cần cập nhật file `preview_all.html` để dễ dàng kiểm tra trực quan.
+Chạy file script Python sau:
 
 ```bash
-# 1. Thêm file mới vào thư mục tương ứng
-# 2. Chạy script generate asset-map.json
-# PowerShell (Windows):
-.\generate-asset-map.ps1 v1.1.0
-
-# Hoặc Node.js:
-node generate-asset-map.js v1.1.0
-
-# 3. Commit và push
-git add .
-git commit -m "feat: add new icon for cutting module"
-git push
-
-# 4. Tạo tag mới (bump minor)
-git tag v1.1.0
-git push origin v1.1.0
+python tools/generate_preview.py
 ```
 
-### Thay đổi logo lớn (breaking change)
+### Release Phiên bản mới
+Để release một phiên bản mới (tạo tag GitHub và cập nhật CDN):
+Sử dụng script `tools/release.ps1` với tham số là version mới. Script này sẽ tự động:
+1.  Cập nhật file `asset-map.json` (thay thế version cũ bằng version mới trong config và tất cả URLs).
+2.  Cập nhật ngày build (`generatedAt`).
+3.  Tạo lại file Preview.
+4.  Git Commit, Push code, Tạo Tag và Push Tag.
 
-```bash
-# 1. Thay đổi logo
-# 2. Update asset-map.json
-# PowerShell (Windows):
-.\generate-asset-map.ps1 v2.0.0
-
-# Hoặc Node.js:
-node generate-asset-map.js v2.0.0
-
-# 3. Commit
-git add .
-git commit -m "feat: update main logo (breaking change)"
-
-# 4. Tạo tag mới (bump major)
-git tag v2.0.0
-git push origin v2.0.0
-
-# 5. Thông báo team về breaking change
-```
-
-### Sửa lỗi nhỏ (patch)
-
-```bash
-# 1. Sửa file
-# 2. Update asset-map.json nếu cần
-# PowerShell (Windows):
-.\generate-asset-map.ps1 v1.0.1
-
-# Hoặc Node.js:
-node generate-asset-map.js v1.0.1
-
-# 3. Commit
-git add .
-git commit -m "fix: correct icon path in asset-map"
-
-# 4. Bump patch version
-git tag v1.0.1
-git push origin v1.0.1
-```
-
-## 🔧 Scripts
-
-### Generate asset-map.json
-
-#### Cách 1: Dùng PowerShell (Windows - Khuyến nghị)
-
+**Cú pháp:**
 ```powershell
-.\generate-asset-map.ps1 v1.0.0
+.\tools\release.ps1 -Version v2.0.2
 ```
 
-#### Cách 2: Dùng Node.js (nếu đã cài Node.js)
+### Kiểm tra (Testing)
+Trước khi release phiên bản mới:
+1.  **Check cấu trúc**: Đảm bảo file nằm đúng thư mục quy định trong [STRUCTURE.md](./STRUCTURE.md).
+2.  **Check hiển thị**: Mở `preview_all.html` để xem có hình ảnh nào bị lỗi, vỡ, hoặc nền chưa trong suốt không.
+3.  **Check JSON**: Dùng các tool online (như jsonlint.com) để đảm bảo `asset-map.json` đúng cú pháp.
 
-```bash
-node generate-asset-map.js v1.0.0
-```
-
-Script này sẽ:
-- Quét tất cả file trong `logo/`, `icons/`, `images/`
-- Tạo mapping KEY → CDN URL
-- Ghi vào `asset-map.json`
-
-**Lưu ý**: Script tự động detect file `.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`
-
-## 📦 Dependencies
-
-Không có dependencies. Chỉ cần Node.js để chạy script generate asset-map.
-
-## 🤝 Contributing
-
-1. Tạo branch mới từ `main`
-2. Thêm/sửa asset
-3. Chạy `node generate-asset-map.js`
-4. Commit và push
-5. Tạo Pull Request
-6. Sau khi merge, tạo Git tag mới
-
-## 📚 Tài liệu tham khảo
-
-- [NAMING-CONVENTIONS.md](./NAMING-CONVENTIONS.md) - Quy chuẩn đặt tên file
-- [VERSIONING.md](./VERSIONING.md) - Quy trình versioning chi tiết
-- [STRUCTURE.md](./STRUCTURE.md) - Cấu trúc thư mục đầy đủ
-- [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) - Hướng dẫn xử lý lỗi
-
-## ⚠️ Troubleshooting
-
-### Lỗi "Failed to fetch version info"
-
-Nếu gặp lỗi này khi truy cập CDN URL:
-
-1. **Kiểm tra repository có public không**
-   - jsDelivr chỉ hỗ trợ public repositories
-   - Đảm bảo repo `ngonluarecca/th2-brand-assets` là public trên GitHub
-
-2. **Đợi jsDelivr index repository**
-   - Sau khi push tag mới, jsDelivr cần 1-5 phút để index
-   - Thử refresh lại sau vài phút
-
-3. **Dùng `@main` thay vì `@v1.0.0` (tạm thời)**
-   ```javascript
-   // Thay vì
-   https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo.svg
-   
-   // Dùng tạm
-   https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@main/logo/th2-logo.svg
-   ```
-   ⚠️ **Lưu ý**: Không dùng `@main` trong production, chỉ dùng để test. Luôn pin version cụ thể.
-
-4. **Kiểm tra tag đã được push chưa**
-   ```bash
-   git ls-remote --tags origin
-   ```
-   Nếu tag chưa có, push tag:
-   ```bash
-   git push origin v1.0.0
-   ```
-
-5. **Kiểm tra file có tồn tại không**
-   - Truy cập trực tiếp: `https://github.com/ngonluarecca/th2-brand-assets/blob/v1.0.0/logo/th2-logo.svg`
-   - Nếu file không có, cần commit và push lại
-
-### Test CDN URL
-
-Sau khi push tag, test URL này trong browser:
-```
-https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v1.0.0/logo/th2-logo-mark.svg
-```
-
-Nếu vẫn lỗi sau 5-10 phút, kiểm tra:
-- Repository visibility (phải là Public)
-- Tag name (phải chính xác: `v1.0.0`)
-- File path (phải đúng case-sensitive)
-
-## 📞 Liên hệ
-
-Nếu có thắc mắc về asset hoặc cần thêm icon mới, liên hệ team Frontend.
+## 5. Tài liệu tham khảo
+- **Design Style**: Soft Lineal Color.
+- **Tools**:
+    - remove_bg.py: Tool xóa nền (sử dụng thư viện `Pillow`).
+    - generate_preview.py: Tool tạo danh mục hiển thị.
 
 ---
-
-**GitHub Repository**: https://github.com/ngonluarecca/th2-brand-assets
-
+*Phiên bản hiện tại: v2.0.1*
