@@ -1,7 +1,0 @@
-<!-- Placeholder: No Data Empty State -->
-<!-- Replace with actual empty state SVG -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
-  <text x="100" y="110" font-family="Arial" font-size="14" fill="currentColor" text-anchor="middle">No Data</text>
-</svg>
-

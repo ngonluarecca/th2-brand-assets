@@ -1,9 +1,0 @@
-<!-- Placeholder: Info Panel -->
-<!-- Replace with actual info panel SVG -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
-  <rect width="400" height="100" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="4"/>
-  <circle cx="30" cy="50" r="15" fill="#3b82f6"/>
-  <text x="30" y="55" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">i</text>
-  <text x="60" y="55" font-family="Arial" font-size="14" fill="#1e40af">Thông tin</text>
-</svg>
-

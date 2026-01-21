@@ -22,10 +22,7 @@ th2-brand-assets/
 │   ├── sales/              # Icon Kinh doanh
 │   ├── system/             # Icon Hệ thống (Cài đặt, Database...)
 │   └── warehouse/          # Icon Kho
-├── images/                 # Chứa hình ảnh minh họa (Banner, Panel...)
-│   ├── banner/             # Ảnh bìa, ảnh tiêu đề
-│   ├── panel/              # Ảnh thông báo, cảnh báo (Alerts)
-│   └── empty-state/        # Ảnh trạng thái rỗng (No data)
+
 ├── logo/                   # Chứa Logo thương hiệu
 └── tools/                  # Các công cụ hỗ trợ (Scripts)
     ├── generate_preview.py # Script tạo file preview_all.html
@@ -42,12 +39,7 @@ th2-brand-assets/
     - Ví dụ sai: `SewingMachine.png`, `may_may.png`.
 - **Tên tiếng Anh**: Ưu tiên sử dụng tên tiếng Anh chuẩn để dễ map với code.
 
-### 2.2. Images (`/images`)
-- **Định dạng**: `.png`.
-- **Phân loại**:
-    - `banner/`: Hình chữ nhật ngang.
-    - `panel/`: Icon/Hình minh họa cho các khối thông báo.
-    - `empty-state/`: Hình minh họa cho trạng thái không có dữ liệu.
+
 
 ### 2.3. Logo (`/logo`)
 - Chứa các biến thể logo chính thức.
