@@ -18,6 +18,8 @@ def remove_white_background(input_path, output_path, tolerance=20):
         img.putdata(new_data)
         img.save(output_path, "PNG")
         print(f"Processed: {os.path.basename(input_path)}")
+    except Exception as e:
+        print(f"Error processing {input_path}: {e}")
 import sys
 
 if len(sys.argv) > 1:
