@@ -1,7 +1,7 @@
 ﻿{
     "version": "v2.0.3",
     "cdnBase": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3",
-    "generatedAt": "2026-01-25T14:12:45.000Z",
+    "generatedAt": "2026-01-25T14:29:35.000Z",
     "icons": {
         "hr": {
             "attendance": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/hr/attendance.png",
@@ -67,6 +67,25 @@
         },
         "logistic": {
             "delivery": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/warehouse/delivery.png"
+        },
+        "ui": {
+            "add": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/add.png",
+            "edit": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/edit.png",
+            "delete": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/delete.png",
+            "close": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/close.png",
+            "camera": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/camera.png",
+            "qr-code": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/qr-code.png",
+            "next": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/next.png",
+            "previous": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/previous.png",
+            "back": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/back.png",
+            "undo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/undo.png",
+            "redo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/redo.png",
+            "home": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/home.png",
+            "menu": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/menu.png",
+            "plus": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/plus.png",
+            "minus": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/minus.png",
+            "male-avatar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/male-avatar.png",
+            "female-avatar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/icons/temp_review/female-avatar.png"
         }
     },
     "logo": {
@@ -75,4 +94,3 @@
         "th2-logo-text": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.3/logo/th2-logo-text.png"
     }
 }
-
