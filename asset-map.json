@@ -1,80 +1,136 @@
 ﻿{
-    "version": "v2.0.5",
-    "cdnBase": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5",
-    "generatedAt": "2026-01-30T13:11:32.000Z",
+    "version": "v2.1.0",
+    "cdnBase": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0",
+    "generatedAt": "2026-01-31T09:46:27.000Z",
     "icons": {
-        "sales": {
-            "customer": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/customer.png",
-            "sales": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/sales.png",
-            "sales-detail": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/sales_detail.png",
-            "delivery": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/delivery.png",
-            "supplier": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/supplier.png",
-            "product": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/product.png",
-            "survey": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/survey.png",
-            "survey-form": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/survey_form.png"
+        "admin": {
+            "calendar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/admin/calendar.png",
+            "report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/admin/report.png"
         },
-        "hr": {
-            "employee": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/employee.png",
-            "timekeeping": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/timekeeping.png",
-            "payroll": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/payroll.png",
-            "calendar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/calendar.png",
-            "profile": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/profile_resume.png",
-            "task": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/task.png"
+        "app-icons": {
+            "cutting-operation-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/cutting-operation-app.png",
+            "dashboard-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/dashboard-app.png",
+            "home-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/home-app.png",
+            "inventory-report-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/inventory-report-app.png",
+            "output-report-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/output-report-app.png",
+            "production-report-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/production-report-app.png",
+            "profile-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/profile-app.png",
+            "red-scissors-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/red-scissors-app.png",
+            "report-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/report-app.png",
+            "users-app": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/app-icons/users-app.png"
+        },
+        "cutting": {
+            "cutting-operation": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/cutting/cutting-operation.png",
+            "red-scissors": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/cutting/red-scissors.png",
+            "scissors": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/cutting/scissors.png"
         },
         "documents": {
-            "folder": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/folder.png",
-            "video": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/video.png",
-            "training-docs": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/training_docs.png"
+            "folder": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/documents/folder.png",
+            "training-docs": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/documents/training-docs.png",
+            "video": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/documents/video.png"
         },
         "finance": {
-            "purchasing": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/purchasing.png",
-            "purchase-detail": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/purchase_detail.png",
-            "order": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/order.png",
-            "income-expense": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/income_expense.png",
-            "purchase-invoice": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/purchase_invoice.png",
-            "vat-invoice": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/vat_invoice.png",
-            "bank-statement": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/bank_statement.png"
+            "bank-statement": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/finance/bank-statement.png",
+            "calculator": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/finance/calculator.png",
+            "income-expense": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/finance/income-expense.png",
+            "invoice": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/finance/invoice.png",
+            "purchase-invoice": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/finance/purchase-invoice.png",
+            "vat-invoice": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/finance/vat-invoice.png"
         },
+        "hr": {
+            "attendance": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/attendance.png",
+            "calendar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/calendar.png",
+            "employee-card": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/employee-card.png",
+            "employee": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/employee.png",
+            "payroll": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/payroll.png",
+            "profile-resume": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/profile-resume.png",
+            "profile": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/profile.png",
+            "salary": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/salary.png",
+            "task": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/task.png",
+            "timekeeping": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/timekeeping.png",
+            "training": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/training.png",
+            "users": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/hr/users.png"
+        },
+        "logistic": {},
+        "png_concept": {},
         "production": {
-            "inventory-report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/inventory_report.png",
-            "production-log": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/production_log.png",
-            "production-plan": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/production_plan.png",
-            "cutting-operation": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/cutting_operation.png",
-            "shipping-info": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/shipping_info.png",
-            "weight-scale": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/weight_scale.png",
-            "output-report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/output_report.png"
+            "fabric": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/fabric.png",
+            "inventory-report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/inventory-report.png",
+            "output-report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/output-report.png",
+            "pattern": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/pattern.png",
+            "production-line": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/production-line.png",
+            "production-log": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/production-log.png",
+            "production-plan": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/production-plan.png",
+            "production-report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/production-report.png",
+            "quality-check": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/quality-check.png",
+            "scale-management": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/scale-management.png",
+            "sewing-machine": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/sewing-machine.png",
+            "shipping-info": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/shipping-info.png",
+            "weight-scale": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/production/weight-scale.png"
+        },
+        "purchase": {
+            "provider": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/purchase/provider.png",
+            "purchase-detail": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/purchase/purchase-detail.png",
+            "purchase": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/purchase/purchase.png",
+            "purchasing": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/purchase/purchasing.png",
+            "supplier": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/purchase/supplier.png"
+        },
+        "sales": {
+            "customer": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/customer.png",
+            "delivery": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/delivery.png",
+            "order": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/order.png",
+            "product": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/product.png",
+            "sales-detail": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/sales-detail.png",
+            "sales": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/sales.png",
+            "survey-form": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/survey-form.png",
+            "survey": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/sales/survey.png"
         },
         "system": {
-            "workflow": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/workflow.png",
-            "settings": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/settings.png",
-            "database": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/database.png",
-            "dashboard": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/dashboard.png"
+            "dashboard": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/dashboard.png",
+            "database": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/database.png",
+            "folder": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/folder.png",
+            "process": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/process.png",
+            "settings": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/settings.png",
+            "video": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/video.png",
+            "workflow": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/system/workflow.png"
         },
         "ui": {
-            "add": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/add.png",
-            "edit": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/edit.png",
-            "delete": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/delete.png",
-            "close": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/close.png",
-            "camera": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/camera.png",
-            "qr-code": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/qr-code.png",
-            "next": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/next.png",
-            "previous": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/previous.png",
-            "back": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/back.png",
-            "undo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/undo.png",
-            "redo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/redo.png",
-            "home": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/home.png",
-            "menu": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/menu.png",
-            "plus": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/plus.png",
-            "minus": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/minus.png",
-            "male-avatar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/male-avatar.png",
-            "female-avatar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/female-avatar.png",
-            "check": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/check.png",
-            "profile": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/icons/temp_review/profile.png"
+            "add": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/add.png",
+            "back": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/back.png",
+            "camera": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/camera.png",
+            "check": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/check.png",
+            "close": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/close.png",
+            "delete": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/delete.png",
+            "edit": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/edit.png",
+            "empty-list": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/empty-list.png",
+            "female-avatar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/female-avatar.png",
+            "home": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/home.png",
+            "info-panel": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/info-panel.png",
+            "maintenance-banner": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/maintenance-banner.png",
+            "male-avatar": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/male-avatar.png",
+            "menu": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/menu.png",
+            "minus": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/minus.png",
+            "next": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/next.png",
+            "no-data": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/no-data.png",
+            "plus": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/plus.png",
+            "previous": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/previous.png",
+            "qr-code": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/qr-code.png",
+            "redo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/redo.png",
+            "undo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/undo.png",
+            "warning-panel": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/warning-panel.png",
+            "welcome-banner": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/ui/welcome-banner.png"
+        },
+        "warehouse": {
+            "box": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/warehouse/box.png",
+            "delivery": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/warehouse/delivery.png",
+            "inventory-report": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/warehouse/inventory-report.png",
+            "inventory": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/warehouse/inventory.png",
+            "shipping-info": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/icons/warehouse/shipping-info.png"
         }
     },
     "logo": {
-        "logo-tron": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/logo/logo-tron.png",
-        "th2-logo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/logo/th2-logo.png",
-        "th2-logo-text": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.0.5/logo/th2-logo-text.png"
+        "logo-tron": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/logo/logo-tron.png",
+        "th2-logo": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/logo/th2-logo.png",
+        "th2-logo-text": "https://cdn.jsdelivr.net/gh/ngonluarecca/th2-brand-assets@v2.1.0/logo/th2-logo-text.png"
     }
 }

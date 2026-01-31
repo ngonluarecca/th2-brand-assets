@@ -75,4 +75,4 @@ Trước khi release phiên bản mới:
     - generate_preview.py: Tool tạo danh mục hiển thị.
 
 ---
-*Phiên bản hiện tại: v2.0.1*
+*Phiên bản hiện tại: v2.1.0*
