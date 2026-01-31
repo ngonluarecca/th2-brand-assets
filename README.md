@@ -68,11 +68,19 @@ Trước khi release phiên bản mới:
 2.  **Check hiển thị**: Mở `preview_all.html` để xem có hình ảnh nào bị lỗi, vỡ, hoặc nền chưa trong suốt không.
 3.  **Check JSON**: Dùng các tool online (như jsonlint.com) để đảm bảo `asset-map.json` đúng cú pháp.
 
-## 5. Tài liệu tham khảo
+## 5. Changelog
+### v2.1.0
+- **New Structure**: Organized assets into `ui`, `documents`, `app-icons`, etc.
+- **App Icons**: Added mobile app icons (180x180px, white background) in `icons/app-icons`.
+- **Deduplication**: Renamed duplicate files (e.g., `calendar-admin.png`) for unique searchability.
+- **Full Sync**: `asset-map.json` now maps 100% of files in the `icons/` directory.
+
+## 6. Tài liệu tham khảo
 - **Design Style**: Soft Lineal Color.
 - **Tools**:
     - remove_bg.py: Tool xóa nền (sử dụng thư viện `Pillow`).
     - generate_preview.py: Tool tạo danh mục hiển thị.
+    - create_app_icons.py: Tool tạo icon app mobile.
 
 ---
 *Phiên bản hiện tại: v2.1.0*

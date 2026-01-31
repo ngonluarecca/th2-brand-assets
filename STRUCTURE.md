@@ -13,7 +13,9 @@ th2-brand-assets/
 ├── 00_overview.md          # Quy chuẩn thiết kế (Design System & AI Prompts)
 ├── icons/                  # Chứa toàn bộ ICON (dạng hình vuông, kích thước nhỏ)
 │   ├── admin/              # Icon quản trị (Lịch, Báo cáo...)
+│   ├── app-icons/          # [NEW] Icon cho Mobile App (iOS/Android, 180x180, nền trắng)
 │   ├── cutting/            # Icon bộ phận Cắt (Vải, Rập, Kéo...)
+│   ├── documents/          # [NEW] Icon tài liệu (Folder, Video, Training...)
 │   ├── finance/            # Icon Tài chính - Kế toán
 │   ├── hr/                 # Icon Nhân sự
 │   ├── logistic/           # Icon Vận chuyển
@@ -21,6 +23,7 @@ th2-brand-assets/
 │   ├── purchase/           # Icon Mua hàng
 │   ├── sales/              # Icon Kinh doanh
 │   ├── system/             # Icon Hệ thống (Cài đặt, Database...)
+│   ├── ui/                 # [NEW] Icon giao diện chung (Home, Menu, Edit, Add...)
 │   └── warehouse/          # Icon Kho
 
 ├── logo/                   # Chứa Logo thương hiệu
